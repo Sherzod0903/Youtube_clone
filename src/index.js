@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Register from './register';
+import Youtube from './Youtube'
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <Register/>
+  <Youtube/>
   
   </React.StrictMode>
 );
