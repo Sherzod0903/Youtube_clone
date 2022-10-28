@@ -15,7 +15,7 @@ render(){
                 {title && <Title tittle >{title}</Title>}
                 {data.map(({icon:Icon,img,title:subTitle})=>(
                     <ItemWrapper>
-
+                        
                         <Icon/>
                         
                         <Title>{subTitle}</Title>

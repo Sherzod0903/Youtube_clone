@@ -8,7 +8,7 @@ import {ReactComponent as videos} from '../Assets/icon/videos.svg'
 import {ReactComponent as watchlater} from '../Assets/icon/watchlater.svg'
 import {ReactComponent as liked} from '../Assets/icon/liked.svg'
 import {ReactComponent as arrow} from '../Assets/icon/arrowdown.svg'
-import {ReactComponent as ar} from '../Assets/image/Quran.png'
+
 
 
 
@@ -100,14 +100,14 @@ export const sidebar=[
 
     title:'Subscriptions',
     data:[
-    {id:1,title:'Read Quran' , icon: Icons.Home},
-    {id:2,title:'Read Quran' , icon: Icons.Home},
-    {id:3,title:'Read Quran' , icon: Icons.Home},
-    {id:4,title:'Read Quran' , icon: Icons.Home},
-    {id:5,title:'Read Quran' , icon: Icons.Home},
-    {id:6,title:'Read Quran' , icon: Icons.Home},
-    {id:7,title:'Read Quran' , icon: Icons.Home},
-    {id:8,title:'Read Quran' , icon: Icons.Home},
+    {id:1,title:'Read Quran' , icon: Icons.Watchlater},
+    {id:2,title:'Read Quran' , icon: Icons.Watchlater},
+    {id:3,title:'Read Quran' , icon: Icons.Watchlater},
+    {id:4,title:'Read Quran' , icon: Icons.Watchlater},
+    {id:5,title:'Read Quran' , icon: Icons.Watchlater},
+    {id:6,title:'Read Quran' , icon: Icons.Watchlater},
+    {id:7,title:'Read Quran' , icon: Icons.Watchlater},
+    {id:8,title:'Read Quran' , icon: Icons.Watchlater},
 
 
 ]  ,  

@@ -5,9 +5,17 @@ import Body from './Body'
 import logo from '../Assets/image/logo.png'
 
 import user from '../Assets/image/logoimg.jpg'
+import  { data } from '../mock';
+
 
 
 export default class Youtube extends React.Component{
+    constructor(props){
+        super(props)
+        this.state={
+            data:data
+        }
+    }
 render(){
     return(
 <Container>
@@ -22,7 +30,7 @@ render(){
         </Wrapper>
     <Container flex>
 <Sidebar/>
-    <Body/>
+    <Body data={this.state.data}/>
      </Container>
     </Container>
  
