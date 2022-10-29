@@ -17,12 +17,24 @@ export default class Youtube extends React.Component{
         }
     }
 render(){
+    const onFilter=(e)=>{
+        console.log(e.target.value);
+        let res=data.filter((value)=>value.title.toLowerCase().includes(e.target.value.toLowerCase()))
+        this.setState({data:res});
+        }
+const onDelete=(id)=>{
+    console.log(id);
+    let res=data.filter(value=>value.id!==id)
+    this.setState({data:res})
+}
+
     return(
 <Container>
     <Wrapper>
-        <Category><Icons.Burger/> <Icons.Logo src={logo} alt='Logo img'/>
+
+        <Category><Icons.Burger/>  <Icons.Logo src={logo} alt='Logo img'/>
         </Category>
-        <Category><Input placeholder='serach'/>
+        <Category><Input placeholder='serach' onChange={onFilter} />
         <Icons.Search/></Category>
         <Category end><Icons.Video/><Icons.Menu/><Icons.Bell/><User src={user} alt='user'/></Category>
 
@@ -30,7 +42,7 @@ render(){
         </Wrapper>
     <Container flex>
 <Sidebar/>
-    <Body data={this.state.data}/>
+    <Body onDelete={onDelete} data={this.state.data}/>
      </Container>
     </Container>
  

@@ -80,7 +80,7 @@ user:{
 },
 
 },
-{id:9,title:'Lorem Ipsum is simply dummy text of the printing',
+{id:9,title:'Jang sanati',
 video:'https://flixable.b-cdn.net/hbo-max/small/us/garfield-a-tail-of-two-kitties.jpg',
 view:'1M',
 time:'10 minutes before',
@@ -110,7 +110,7 @@ user:{
 },
 
 },
-{id:12,title:'Lorem Ipsum is simply dummy text of the printing',
+{id:12,title:'Shum Bola',
 video:'https://flixable.b-cdn.net/hbo-max/small/us/garfield-a-tail-of-two-kitties.jpg',
 view:'1M',
 time:'10 minutes before',

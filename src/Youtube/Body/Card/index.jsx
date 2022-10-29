@@ -6,6 +6,7 @@ import { Container, Video, Wrapper,User, Title } from "./style";
 export default class Youtube extends Component{
 render(){
     const {user,video ,name ,view,time,title,id}=this.props.value;
+    const{onDelete}=this.props;
     return(
 
 <Container>
@@ -21,7 +22,7 @@ render(){
 <Title des>{id} | {user.name} </Title>
 
 <div style={{display:'flex'}}>
-<Title des> {view} {time}</Title>
+<Title des> {view} {time} <button onClick={()=>onDelete(id)} >delelte</button></Title>
 </div>
 
 </div>

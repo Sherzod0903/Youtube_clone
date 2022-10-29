@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "./style";
 import Card from './Card';
-import  { data } from '../../mock';
+
 
 
 
@@ -13,11 +13,17 @@ export default class Youtube extends React.Component{
 
 render(){
 // console.log(this.props.data , 'data');
-const {data}=this.props;
+
+const {data, onDelete}=this.props;
     return(
 <Container>
-    {data.map((value)=>(  
-    <Card     value={value}  />  ))}
+    {
+    data.length? (     data.map((value)=>(  
+    <Card  onDelete={onDelete}   value={value}  />  )))
+    :(
+        <h1 style={{ textAlign:'center', width:'100%'}}> Not Found </h1>
+    )
+}
   
      </Container>
  
