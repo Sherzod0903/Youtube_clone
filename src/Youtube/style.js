@@ -122,3 +122,40 @@ padding-left:10px;
 
 `
 
+export const Side=styled.div`
+display:flex;
+align-items:center;
+justify-content:center;
+/* width:1440px; */
+
+`
+export const Text=styled.div`
+
+font-family:'Roboto';
+padding: 5px 12px;
+margin-top:10px;
+margin-left:15px;
+flex: none;
+order: 0;
+flex-grow: 0;
+max-width:120px;
+
+height: 30px;
+border-radius:30px;
+
+color:#ffff;
+background: rgba(255, 255, 255, 0.2);
+margin-bottom:20px;
+:hover{
+    font-size:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:whitesmoke;
+    color:black;
+    width:130px;
+    height:40px;
+}
+cursor: pointer;
+`
+

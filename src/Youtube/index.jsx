@@ -1,5 +1,5 @@
 import React from "react";
-import { Category, Container, Icons, Wrapper ,Input,User} from "./style";
+import { Category, Container, Icons, Wrapper ,Input,User, Side,Text} from "./style";
 import Sidebar from './Sidebar'
 import Body from './Body'
 import logo from '../Assets/image/logo.png'
@@ -28,10 +28,15 @@ const onDelete=(id)=>{
     this.setState({data:res})
 }
 
+const onClick=()=>{
+
+
+}
+
     return(
 <Container>
     <Wrapper>
-
+    
         <Category><Icons.Burger/>  <Icons.Logo src={logo} alt='Logo img'/>
         </Category>
         <Category><Input placeholder='serach' onChange={onFilter} />
@@ -40,10 +45,29 @@ const onDelete=(id)=>{
 
        
         </Wrapper>
+        <Side>
+        <Text onClick={onClick}>Sport</Text>
+        <Text>Business</Text>
+        <Text>Music</Text>
+        <Text>Technology</Text>
+        <Text>News</Text>
+        <Text>Comedian</Text>
+        <Text>Tranding</Text>
+        <Text>Colorful</Text>
+        <Text>Action</Text>
+        <Text>Moments</Text>
+        <Text>Business</Text>
+        </Side>
+       
+
     <Container flex>
-<Sidebar/>
+<Sidebar/>  
     <Body onDelete={onDelete} data={this.state.data}/>
+  
+   
      </Container>
+ 
+
     </Container>
  
     )
