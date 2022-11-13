@@ -129,7 +129,7 @@ justify-content:center;
 /* width:1440px; */
 
 `
-export const Text=styled.div`
+export const Sport=styled.div`
 
 font-family:'Roboto';
 padding: 5px 12px;

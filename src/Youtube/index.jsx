@@ -1,10 +1,10 @@
 import React from "react";
-import { Category, Container, Icons, Wrapper ,Input,User, Side,Text} from "./style";
+import { Category, Container, Icons, Wrapper ,Input,User, Side,Sport} from "./style";
 import Sidebar from './Sidebar'
 import Body from './Body'
 import logo from '../Assets/image/logo.png'
 
-import user from '../Assets/image/logoimg.jpg'
+import user from '../Assets/image/yuo.jpg'
 import  { data } from '../mock';
 
 
@@ -13,7 +13,8 @@ export default class Youtube extends React.Component{
     constructor(props){
         super(props)
         this.state={
-            data:data
+            data:data,
+            active:true,
         }
     }
 render(){
@@ -28,8 +29,9 @@ const onDelete=(id)=>{
     this.setState({data:res})
 }
 
-const onClick=()=>{
-
+const onClick=(value)=>{
+console.log(value);
+this.setState({active:value})
 
 }
 
@@ -46,17 +48,20 @@ const onClick=()=>{
        
         </Wrapper>
         <Side>
-        <Text onClick={onClick}>Sport</Text>
-        <Text>Business</Text>
-        <Text>Music</Text>
-        <Text>Technology</Text>
-        <Text>News</Text>
-        <Text>Comedian</Text>
-        <Text>Tranding</Text>
-        <Text>Colorful</Text>
-        <Text>Action</Text>
-        <Text>Moments</Text>
-        <Text>Business</Text>
+        <Sport onClick={onClick}>Technology</Sport>
+        <Sport onClick={onClick}>Sport</Sport>
+        <Sport onClick={onClick}>Business</Sport>
+        <Sport onClick={onClick}>News</Sport>
+        <Sport onClick={onClick}>Technology</Sport>
+        <Sport onClick={onClick}>Action</Sport>
+        <Sport onClick={onClick}>Comedy</Sport>
+        <Sport onClick={onClick}>Languages</Sport>
+        <Sport onClick={onClick}>Moments</Sport>
+
+
+       
+       
+       
         </Side>
        
 

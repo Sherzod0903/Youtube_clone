@@ -20,13 +20,7 @@ const {data, onDelete}=this.props;
 <Container>
 
 
-
-  
-
-
-
-
-       
+ {/* <Card/> */}
   
 
     {
