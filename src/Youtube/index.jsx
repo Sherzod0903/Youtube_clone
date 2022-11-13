@@ -14,7 +14,7 @@ export default class Youtube extends React.Component{
         super(props)
         this.state={
             data:data,
-            active:true,
+            // active:true,
         }
     }
 render(){
@@ -25,8 +25,8 @@ render(){
         }
 const onDelete=(id)=>{
     console.log(id);
-    let res=data.filter(value=>value.id!==id)
-    this.setState({data:res})
+    let ress=data.filter((value)=>value.id!==id)
+    this.setState({data:ress})
 }
 
 const onClick=(value)=>{

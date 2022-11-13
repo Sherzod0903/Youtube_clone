@@ -4,6 +4,7 @@ import { Container, Video, Wrapper,User, Title } from "./style";
 
 
 export default class Youtube extends Component{
+   
 render(){
     const {user,video ,view,time,title,id}=this.props.value;
     const{onDelete}=this.props;
