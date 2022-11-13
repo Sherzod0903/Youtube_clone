@@ -1,11 +1,11 @@
 import React from "react";
-import { Category, Container, Icons, Wrapper ,Input,User, Side,Sport} from "./style";
+import { Category, Container, Icons, Wrapper ,Input,User, Side,Link} from "./style";
 import Sidebar from './Sidebar'
 import Body from './Body'
 import logo from '../Assets/image/logo.png'
-
 import user from '../Assets/image/yuo.jpg'
 import  { data } from '../mock';
+import { Root } from "../root/root";
 
 
 
@@ -29,11 +29,7 @@ const onDelete=(id)=>{
     this.setState({data:ress})
 }
 
-const onClick=(value)=>{
-console.log(value);
-this.setState({active:value})
 
-}
 
     return(
 <Container>
@@ -45,30 +41,27 @@ this.setState({active:value})
         <Icons.Search/></Category>
         <Category end><Icons.Video/><Icons.Menu/><Icons.Bell/><User src={user} alt='user'/></Category>
 
+
        
         </Wrapper>
         <Side>
-        <Sport onClick={onClick}>Technology</Sport>
-        <Sport onClick={onClick}>Sport</Sport>
-        <Sport onClick={onClick}>Business</Sport>
-        <Sport onClick={onClick}>News</Sport>
-        <Sport onClick={onClick}>Technology</Sport>
-        <Sport onClick={onClick}>Action</Sport>
-        <Sport onClick={onClick}>Comedy</Sport>
-        <Sport onClick={onClick}>Languages</Sport>
-        <Sport onClick={onClick}>Moments</Sport>
-
-
-       
-       
-       
+        <Link activeStyle={{color:'coral'}} to={'/home'} >Technology</Link>
+        <Link activeStyle={{color:'coral'}} to={'/sport'} >Sport</Link>
+        <Link activeStyle={{color:'coral'}} to={'/Business'} >Business</Link>
+        <Link activeStyle={{color:'coral'}} to={'/news'} >News</Link>
+        <Link activeStyle={{color:'coral'}} to={'/Technology'} >Technology</Link>
+        <Link activeStyle={{color:'coral'}} to={'/Action'} >Action</Link>
+        <Link activeStyle={{color:'coral'}} to={'/Comedy'} >Comedy</Link>
+        <Link activeStyle={{color:'coral'}} to={'/Languages'} >Languages</Link>
+        <Link activeStyle={{color:'coral'}} to={'/Moments'} >Moments</Link>
+              
         </Side>
        
 
     <Container flex>
 <Sidebar/>  
-    <Body onDelete={onDelete} data={this.state.data}/>
-  
+    <Body onDelete={onDelete} data={this.state.data}/>  
+  <Root/>
    
      </Container>
  

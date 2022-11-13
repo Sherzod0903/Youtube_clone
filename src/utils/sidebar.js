@@ -8,31 +8,19 @@ import {ReactComponent as videos} from '../Assets/icon/videos.svg'
 import {ReactComponent as watchlater} from '../Assets/icon/watchlater.svg'
 import {ReactComponent as liked} from '../Assets/icon/liked.svg'
 import {ReactComponent as arrow} from '../Assets/icon/arrowdown.svg'
-import kitob from "../Assets/image/Quran.png"
+import {ReactComponent as profilee} from '../Assets/icon/profile.svg'
+import {ReactComponent as master} from '../Assets/icon/profiles.svg'
+import {ReactComponent as shifu} from '../Assets/icon/profilet.svg'
 
 import {ReactComponent as youtube} from "../Assets/icon/youtube.svg"
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import { Category } from '../Youtube/style'
+            
+       
 
   const Icons=styled.div`
 width:16px;
 height:16px;
 `
- Icons.Arr=styled.img`
 
-`
 Icons.Home=styled(home)`
 `
 Icons.Compus=styled(compus)`
@@ -61,61 +49,19 @@ Icons.Arrow=styled(arrow)`
 
 Icons.Liked=styled(liked)`
 `
+Icons.Profilet=styled(profilee)``
+Icons.Profilee=styled(master)``
+Icons.Profiles=styled(shifu)``
 
-Icons.Liked=styled(liked)`
-`
 
-Icons.Liked=styled(liked)`
-`
 
-export const Image=styled.img`
-
-`
-
-Image.Quran=styled(kitob)`
+export const Image=styled.div`
 width:33px;
 height:30px;
-border-radius:50%;`
-
-
-
-Icons.Youtube=styled(youtube)`
-
+border-radius:50%;
 `
+Icons.Youtube=styled(youtube)``
 
-export const chanels=[
-    
-    {
-        id:1,
-      
-    
-        title:'Subscriptions',
-        data:[
-        {id:1,title:'Read Quran' ,src:'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.kindpng.com%2Ffree%2Fislamic-logo%2F&psig=AOvVaw3ZDWVdzrDZ6yXk65rgn7Bq&ust=1668343913693000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCOi63MTXqPsCFQAAAAAdAAAAABAN'  },
-      
-      
-    
-    
-    ]  ,  
-    },
-    
-    {
-        id:2,
-       
-    
-        title:'More from YouTube',
-        data:[
-        {id:1,title:'Youtube premium',icon: Icons.Videos},
-        {id:2,title:'Settings',icon: Icons.Watchlater},
-        {id:3,title:'Help',icon: Icons.Compus},
-        {id:4,title:'Report Issue',icon: Icons.Arrow},
-      
-    
-    
-    ]  ,  
-    },
-    
-    ]
 
 
 export const sidebar=[
@@ -147,7 +93,41 @@ export const sidebar=[
 
 ]  ,  
 },
+ 
+{
+    id:3,
+  
 
+    title:'Subscriptions',
+    data:[
+    {id:1,title:'The Game' ,icon: Icons.Profilee},
+    {id:2,title:'Read Quran',icon: Icons.Profiles},
+    {id:3,title:'Toronto',icon: Icons.Profilet},
+    {id:4,title:'Read Quran',icon: Icons.Profilee},
+
+
+    
+  
+
+
+]  ,  
+},
+
+{
+    id:4,
+   
+
+    title:'More from YouTube',
+    data:[
+    {id:1,title:'Youtube premium',icon: Icons.Videos},
+    {id:2,title:'Settings',icon: Icons.Videos},
+    {id:3,title:'Help',icon: Icons.Videos},
+    {id:4,title:'Report Issue',icon: Icons.Videos},
+  
+
+
+]  ,  
+},
 ];
 
 

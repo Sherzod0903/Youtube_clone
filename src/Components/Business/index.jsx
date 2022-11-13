@@ -1,21 +1,16 @@
 import React from "react";
 import { Container, } from "./style";
 import Card from './Card';
-import { sportt } from "../../mock";
+import { business } from "../../mock";
 
 
 
 
 
 
-export default class Sport extends React.Component{
-    constructor(props){
-        super(props)
-        this.state={
-            data:sportt,
-            // active:true,
-        }
-    }
+export default class Business extends React.Component{
+   
+   
 render(){
 
 
@@ -30,7 +25,7 @@ const {onDelete}=this.props
   
 
     {
-        (    sportt.map((value)=>(  
+        (    business.map((value)=>(  
     <Card key={value.id} onDelete={onDelete}   value={value}  />  )))
    
 }

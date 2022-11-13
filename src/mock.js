@@ -1,7 +1,97 @@
+import main from "./Assets/image/main1.png"
+
+export const business=[
+    {id:1,
+    title:'Business life',
+    video:main,
+    view:'1M',
+    time:'10 minutes before',
+    user:{
+        img:'https://www.cgi.com/sites/default/files/styles/hero_banner/public/space_astronaut.jpg?itok=k2oFRHrr',
+        name:'THe best film all of time'
+    },
+    
+    },
+    {id:2,
+        title:'Sport',
+        video:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO-ekAtmMzZmMRSNxXkU0rUFs-2qPj0Cf6gQ&usqp=CAU',
+        view:'1M',
+        time:'10 minutes before',
+        user:{
+            img:'https://www.cgi.com/sites/default/files/styles/hero_banner/public/space_astronaut.jpg?itok=k2oFRHrr',
+            name:'THe best film all of time'
+        },
+        
+        },
+    {id:3,
+        title:'Inception',
+    video:'https://imageio.forbes.com/specials-images/imageserve/614d55107441e2d9ba4238f6/The-7-Biggest-Artificial-Intelligence--AI--Trends-In-2022/960x0.jpg?format=jpg&width=960',
+    view:'1M',
+    time:'10 minutes before',
+    user:{
+        img:'https://cdn.shopify.com/s/files/1/0327/8461/3514/articles/bodybuilding-equiupments-you-must-have_1024x.jpg?v=1593538908',
+        name:'THe best film all of time'
+    },
+    
+    },{id:4,title:'Nature',
+    video:'https://johanneslarsson.com/wp-content/uploads/2020/10/pursuit-of-happyness-1-1024x512.jpg',
+    view:'1M',
+    time:'10 minutes before',
+    user:{
+        img:'https://www.cgi.com/sites/default/files/styles/hero_banner/public/space_astronaut.jpg?itok=k2oFRHrr',
+        name:'THe best film all of time'
+    },}]
+
+
+
+
+
+
+
+
+
+export const sportt=[
+    {id:1,
+    title:'Sport',
+    video:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO-ekAtmMzZmMRSNxXkU0rUFs-2qPj0Cf6gQ&usqp=CAU',
+    view:'1M',
+    time:'10 minutes before',
+    user:{
+        img:'https://www.cgi.com/sites/default/files/styles/hero_banner/public/space_astronaut.jpg?itok=k2oFRHrr',
+        name:'THe best film all of time'
+    },
+    
+    },
+    {id:2,
+        title:'Running all day',
+    video:'https://www.azonano.com/images/Article_Images/ImageForArticle_5550_15983601854071872.png',
+    view:'1M',
+    time:'10 minutes before',
+    user:{
+        img:'https://cdn.shopify.com/s/files/1/0327/8461/3514/articles/bodybuilding-equiupments-you-must-have_1024x.jpg?v=1593538908',
+        name:'THe best film all of time'
+    },
+    
+    },{id:3,title:'Nature',
+    video:'https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/Zugpsitze_mountain.jpg?crop=0%2C176%2C3008%2C1654&wid=4000&hei=2200&scl=0.752',
+    view:'1M',
+    time:'10 minutes before',
+    user:{
+        img:'https://www.cgi.com/sites/default/files/styles/hero_banner/public/space_astronaut.jpg?itok=k2oFRHrr',
+        name:'THe best film all of time'
+    },}]
+
+
+
+
+
+
+
+
 export const data=[
 {id:1,
 title:'Garfield',
-video:'https://flixable.b-cdn.net/hbo-max/small/us/garfield-a-tail-of-two-kitties.jpg',
+video:main,
 view:'1M',
 time:'10 minutes before',
 user:{

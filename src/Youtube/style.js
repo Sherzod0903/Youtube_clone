@@ -1,11 +1,40 @@
 import styled from 'styled-components';
-
 import { ReactComponent as burger} from '../Assets/icon/burger.svg'
 import { ReactComponent as search} from '../Assets/icon/search.svg'
 import { ReactComponent as video} from '../Assets/icon/video.svg'
 import { ReactComponent as bell} from '../Assets/icon/bell.svg'
 import { ReactComponent as menu} from '../Assets/icon/menu.svg'
+import { NavLink } from 'react-router-dom';
 
+
+export const Link=styled(NavLink)`
+font-family:'Roboto';
+padding: 5px 12px;
+margin-top:10px;
+margin-left:25px;
+flex: none;
+order: 0;
+flex-grow: 0;
+max-width:120px;
+
+height: 30px;
+border-radius:30px;
+text-decoration:none;
+color:#ffff;
+background: rgba(255, 255, 255, 0.2);
+margin-bottom:20px;
+:hover{
+    font-size:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:whitesmoke;
+    color:black;
+    width:130px;
+    height:40px;
+}
+cursor: pointer;
+`
 
 
 
@@ -15,7 +44,9 @@ flex-direction:${({flex})=>!flex&&'column'};
 background-color: #212121;
 /* height:100vh;  */
 color:#FFFFFF;
-padding:${({flex})=>!flex&&'0 30px'};
+width:100%;
+max-width:1940px;
+padding:${({flex})=>!flex&&'0 0 0 20px'};
 `
 
 export const Wrapper=styled.div`
@@ -128,34 +159,5 @@ align-items:center;
 justify-content:center;
 /* width:1440px; */
 
-`
-export const Sport=styled.div`
-
-font-family:'Roboto';
-padding: 5px 12px;
-margin-top:10px;
-margin-left:15px;
-flex: none;
-order: 0;
-flex-grow: 0;
-max-width:120px;
-
-height: 30px;
-border-radius:30px;
-
-color:#ffff;
-background: rgba(255, 255, 255, 0.2);
-margin-bottom:20px;
-:hover{
-    font-size:20px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background-color:whitesmoke;
-    color:black;
-    width:130px;
-    height:40px;
-}
-cursor: pointer;
 `
 

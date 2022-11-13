@@ -1,6 +1,6 @@
 import React from "react";
 import { Container ,Title,Wrapper,ItemWrapper} from "./style";
-import { chanels, sidebar} from "../../utils/sidebar";
+import { sidebar} from "../../utils/sidebar";
 // import {ReactComponent as ar} from '../Assets/image/Quran.png'
 
 
@@ -13,30 +13,12 @@ render(){
     {
         sidebar.map(({icon,id,title,data})=>(
             <Wrapper key={id} >
-               
-                {data.map(({icon:Icon,title})=>(
-                    <ItemWrapper>
-                        
-                        <Icon/>
-                        
-                        <Title>{title}</Title>
-                    </ItemWrapper>
-                    ))
-                }
-
-            </Wrapper>
-        ))
-    }
-     {
-        chanels.map(({id,title,data})=>(
-            <Wrapper key={id} >
                 {title && <Title tittle >{title}</Title>}
-                {data.map(({title,})=>(
+               
+                {data.map(({title,icon:Icons})=>(
                     <ItemWrapper>
                         
-                    
-           
-
+                        <Icons/>
                         
                         <Title>{title}</Title>
                     </ItemWrapper>
@@ -46,6 +28,7 @@ render(){
             </Wrapper>
         ))
     }
+    
      </Container>
  
     )
