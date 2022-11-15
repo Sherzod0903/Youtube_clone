@@ -5,10 +5,17 @@ width:350px;
 height:300px;
 margin-right:20px;
 margin-bottom:20px;
+max-width:350px;
+min-width:350px;
+
+min-height:300px;
 `
 
 export const Video =styled.img`
 width:100%;
+min-width:350px;
+
+min-height:200px;
 height:200px;
 margin-left:24px;
 margin-bottom:12px;

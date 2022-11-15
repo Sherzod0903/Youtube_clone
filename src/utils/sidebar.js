@@ -19,9 +19,12 @@ import {ReactComponent as youtube} from "../Assets/icon/youtube.svg"
   const Icons=styled.div`
 width:16px;
 height:16px;
+
+
 `
 
 Icons.Home=styled(home)`
+
 `
 Icons.Compus=styled(compus)`
 `

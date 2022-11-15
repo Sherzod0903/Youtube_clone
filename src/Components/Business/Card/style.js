@@ -8,6 +8,9 @@ margin-bottom:20px;
 `
 
 export const Video =styled.img`
+min-width:350px;
+
+min-height:200px;
 width:100%;
 height:200px;
 margin-left:24px;

@@ -18,7 +18,7 @@ render(){
                 {data.map(({title,icon:Icons})=>(
                     <ItemWrapper>
                         
-                        <Icons/>
+                        <Icons />
                         
                         <Title>{title}</Title>
                     </ItemWrapper>

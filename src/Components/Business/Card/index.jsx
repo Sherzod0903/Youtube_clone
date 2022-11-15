@@ -13,7 +13,7 @@ render(){
 <Container>
     <Video src={video} alt='video content'/>
     <Wrapper>
-<User src={user.img}/>
+<User src={user.img} alt='user image        '/>
 
 
 
